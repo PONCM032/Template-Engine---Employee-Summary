@@ -40,7 +40,55 @@ inquirer
             choices: ["Engineer", "Intern", "I don't want to add any more team members"]
         }
     ]).then(answers => {
-        
+        if(answers.name === "Engineer"){
+            inquirer.prompt([
+                { 
+                    type: "input",
+                    name: "name",
+                    message: "What is your engineer's name?"
+                },
+                {
+                    type: "input",
+                    name: "id",
+                    message: "What is your engineer's id?"
+                },
+                {
+                    type: "input",
+                    name: "email",
+                    message: "What is your engineer's email?"
+                },
+                {
+                    type: "input",
+                    name: "GitHub",
+                    message: "What is your engineer's GitHub username?"
+                },
+            ])
+        } else if(answers.name === "Intern"){
+            inquirer.prompt([
+                { 
+                    type: "input",
+                    name: "name",
+                    message: "What is your intern's name?"
+                },
+                {
+                    type: "input",
+                    name: "id",
+                    message: "What is your intern's id?"
+                },
+                {
+                    type: "input",
+                    name: "email",
+                    message: "What is your intern's email?"
+                },
+                {
+                    type: "input",
+                    name: "school",
+                    message: "What is your intern's school?"
+                },
+            ])
+        } else{
+            
+        }
     })
 
 // Write code to use inquirer to gather information about the development team members,
