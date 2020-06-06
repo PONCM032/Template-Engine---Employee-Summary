@@ -22,6 +22,7 @@
   "homepage": "https://github.com/PONCM032/Template-Engine---Employee-Summary#readme",
   "dependencies": {
     "fs": "0.0.1-security",
+    "inquirer": "^7.1.0",
     "inquiry": "0.0.3",
     "path": "^0.12.7",
     "test": "^0.6.0"
